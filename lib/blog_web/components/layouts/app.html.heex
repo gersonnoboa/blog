@@ -1,0 +1,18 @@
+<header class="navbar bg-neutral text-primary-content shadow-md">
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl" href={~p"/"}>Gerson Noboa</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href={~p"/"}>Blog</a></li>
+      <li><a href="https://gerson.dev">Website</a></li>
+      <li><a href="https://linkedin.com/in/gersonnoboa">LinkedIn</a></li>
+    </ul>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-4xl">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>
